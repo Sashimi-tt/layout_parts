@@ -1,5 +1,87 @@
 @charset "UTF-8";
 
+.q6_inner {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .q6_img_wrapper {
+    cursor: pointer;
+    height: 200px;
+    margin-left: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+  }
+  
+  .q6_img {
+    height: 100%;
+    transition: all .5s;
+    width: 100%;
+  }
 
+  .q6_text {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
+    bottom: -100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transition: all .5s;
+    width: 100%;
+  }
+  
+  .q6_text p {
+    bottom: 0;
+    box-sizing: border-box;
+    color: #fff;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    word-break: break-all;
+  }
+
+  .q6_img_wrapper:first-child {
+    margin-left: 0;
+  }
+  
+  .q6_action_zoom:hover .q6_img  {
+    transform: scale(1.5);
+  }
+  
+  .q6_img_wrapper.q6_action_pop-in:hover .q6_text {
+    bottom: 0;
+  }
+
+  .q6_action_scroll {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .q6_action_scroll_text {
+    box-sizing: border-box;
+    font-size: 0;
+    height: 540px;
+    padding: 80px 0;
+  }
+  
+  .q6_action_scroll p {
+    display: inline-block;
+    font-size: 200px;
+    height: 100%;
+  }
+  
+  .q6_action_scroll_text p {
+    animation: loop 10s linear infinite;
+  }
+  
+  @keyframes loop {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 /* q6が終わったら
 q7のcssはq7フォルダの中のcssファイルに記述してください */
