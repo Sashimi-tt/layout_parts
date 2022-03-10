@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.q7_inner {
+.q7_display_flex {
     align-items: flex-end;
     display: flex;
     justify-content: center;

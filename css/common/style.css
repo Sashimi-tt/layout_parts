@@ -175,7 +175,7 @@
 }
 
 .q4_inner_contents, .q4_white, .q4_blue,
-.q5_inner_contents, .q5_white, .q5_white_calc {
+.q5_inner_contents, .q5_textbox, .q5_textbox_calc {
   box-sizing: border-box;
 }
 
@@ -190,8 +190,8 @@
   background-color: #eee;
 }
 
-.q5_white,
-.q5_white_calc {
+.q5_textbox,
+.q5_textbox_calc {
   padding: 10px;
   font-size: 12px;
   line-height: 24px;

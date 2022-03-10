@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.q6_inner {
+.q6_display_flex {
     display: flex;
     justify-content: center;
   }
